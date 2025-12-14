@@ -81,11 +81,13 @@ form {
     @apply flex flex-col items-center gap-8 max-w-4xl text-center;
   }
   .resumes-section {
-    @apply flex flex-wrap max-lg:flex-col gap-6 items-start  w-full max-w-[1850px] justify-evenly;
+    /* Use a responsive grid: 1 column (small), 2 columns (sm), 3 columns (lg+) */
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-[1850px] justify-items-stretch;
   }
 
   .resume-card {
-    @apply flex flex-col gap-8 h-[560px] w-full lg:w-[450px] xl:w-[490px] bg-white rounded-2xl p-4;
+    /* cards now live in grid cells so use full width of the cell */
+    @apply flex flex-col gap-8 h-[560px] w-full bg-white rounded-2xl p-4;
   }
 
   .resume-card-header {
