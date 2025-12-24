@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router';
 import { usePuterStore } from '~/lib/puter'
 export const meta = () => ([
-    { title: 'ResumeAI | Auth' },
-    { name: 'description', content: 'Authenticate to ResumeAI' }
+    { title: 'Resumind | Auth' },
+    { name: 'description', content: 'Authenticate to Resumind' }
 ])
 
 const Auth = () => {
